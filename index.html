@@ -1,450 +1,242 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="vi">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Fruits Shop</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
-    <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous"> -->
-    <link rel="stylesheet" href="./assets/css/style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Thiệp Mời Cưới - Wuang & Dunn | 18.04.2026</title>
+  <meta name="description" content="Trân trọng kính mời Quý khách dự tiệc cưới của Wuang & Dunn vào ngày 18 tháng 4 năm 2026" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Vidaloka&family=IM+Fell+English:ital@0;1&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=Roboto:wght@300;400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="./assets/css/style.css" />
 </head>
 <body>
-    <!-- header -->
-    <div class="wrap__header">
-        <div class="header">
-            <div class="header__logo">
-                <img class="logo" src="./assets/img/logo.png" alt="">
-            </div>
-            <div class="header__menu">
-                <ul>
-                    <li class="menu__item active">
-                        <a href="">Trang chủ</a>
-                    </li>
-                    <li class="menu__item menu__item-detail">
-                        <a class="" href="">
-                            Sản phẩm
-                        </a>                     
-                        <div class="menu__detail">
-                            <a class="menu__detail-link" href="">Trong Nước</a>
-                            <a class="menu__detail-link" href="">Nhập Khẩu</a>
-                            <a class="menu__detail-link" href="">Khác</a>
-                        </div>
-                    </li>                   
-                    <li class="menu__item">
-                        <a href="">Giới thiệu</a>
-                    </li>
-                    <li class="menu__item">
-                        <a href="">tin tức</a>
-                    </li>
-                    <li class="menu__item">
-                        <a href="">liên hệ</a>
-                    </li>
-                </ul>
-                <div class="menu__icon">
-                    <a href="" class="icon_item">
-                        <i class="fas fa-user-plus"></i>
-                        Đăng Ký
-                    </a>
-                    <a href="" class="icon_item">
-                        <i class="fas fa-sign-out-alt"></i>
-                        Đăng Nhập
-                    </a>
-                    <a href="" class="icon_item">
-                        <i class="fas fa-shopping-cart"></i>
-                    </a>
-                </div>
-            </div>
-        </div>
+
+  <!-- ============================================================
+       COVER / MỞ THIỆP
+  ============================================================ -->
+  <div class="cover-overlay" id="coverOverlay">
+    <div class="floating-xi" id="floater1">囍</div>
+    <div class="floating-xi" id="floater2">囍</div>
+    <div class="floating-xi" id="floater3">囍</div>
+    <div class="floating-xi" id="floater4">囍</div>
+    <div class="floating-xi" id="floater5">囍</div>
+    <div class="cover-card">
+      <img src="dragon-cover.png" alt="Dragon Wedding Cover" class="cover-img" />
+      <div class="cover-content">
+        <div class="cover-medallion">囍</div>
+        <h1 class="cover-names">wuang &amp; dunn</h1>
+        <div class="cover-divider"><span>❤</span></div>
+        <p class="cover-date">18 tháng 4, 2026</p>
+        <p class="cover-label">Thân Mời</p>
+        <button class="btn-open" id="btnOpen" onclick="openInvitation()">Mở thiệp</button>
+      </div>
     </div>
-    <!-- content -->
-    <div class="content">
-        <!-- slider -->
-        <div class="slider">
-            <div class="sliders">
-                <div class="slide slide1">
-                    <img src="./assets/img/slide2.png" alt="">
-                </div>
-            </div>
-        </div>
-        <!-- main -->
-        <div class="main__content">
-            <!-- product -->
-            <div class="product">
-                <div class="product__title">
-                    Hàng Nhập khẩu                   
-                </div>
-                <div class="decoration"></div>
-                <div class="product__wrap">
-                    <div class="item">
-                        <img src="./assets/img/buoi_dx.jpg" alt="">
-                        <h4>Bưởi ngọt</h4>
-                        <span class="price">25.000đ</span>
-                        <div class="rate">
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                        </div>
-                        <a href="" class="btn__buy">Mua Ngay</a>
-                    </div>
-                    <div class="item">
-                        <img src="./assets/img/tra_tipson.jpg" alt="">
-                        <h4>trà tipson</h4>
-                        <span class="price">25.000đ</span>
-                        <div class="rate">
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                        </div>
-                        <a href="" class="btn__buy">Mua Ngay</a>
-                    </div><div class="item">
-                        <img src="./assets/img/cam_ngot.jpg" alt="">
-                        <h4>cam ngọt</h4>
-                        <span class="price">25.000đ</span>
-                        <div class="rate">
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                        </div>
-                        <a href="" class="btn__buy">Mua Ngay</a>
-                    </div>
-                    <div class="item">
-                        <img src="./assets/img/cam_uc.jpg" alt="">
-                        <h4>cam úc</h4>
-                        <span class="price">25.000đ</span>
-                        <div class="rate">
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                        </div>
-                        <a href="" class="btn__buy">Mua Ngay</a>
-                    </div>
-                    <div class="item">
-                        <img src="./assets/img/tra_lua_mach.jpg" alt="">
-                        <h4>trà lúa mạch</h4>
-                        <span class="price">25.000đ</span>
-                        <div class="rate">
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                        </div>
-                        <a href="" class="btn__buy">Mua Ngay</a>
-                    </div>
-                    <div class="item">
-                        <img src="./assets/img/xoai_uc.png" alt="">
-                        <h4>xoài úc</h4>
-                        <span class="price">25.000đ</span>
-                        <div class="rate">
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                        </div>
-                        <a href="" class="btn__buy">Mua Ngay</a>
-                    </div>
-                    <div class="item">
-                        <img src="./assets/img/xoai_cat.jpg" alt="">
-                        <h4>xoài cát</h4>
-                        <span class="price">25.000đ</span>
-                        <div class="rate">
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                        </div>
-                        <a href="" class="btn__buy">Mua Ngay</a>
-                    </div>    
-                </div>
-                <ul class="pagination product__wrap-pagination">
-                    <li class="pagination__item">
-                        <a href="" class="pagination__item-link">
-                            <i class="fa fa-chevron-left" aria-hidden="true"></i>
-                        </a>
-                    </li>
-                    <li class="pagination__item pagination__item--active">
-                        <a href="" class="pagination__item-link">1
-                        </a>
-                    </li>
-                    <li class="pagination__item">
-                        <a href="" class="pagination__item-link">2
-                        </a>
-                    </li>
-                    <li class="pagination__item">
-                        <a href="" class="pagination__item-link">3
-                        </a>
-                    </li>
-                    <li class="pagination__item">
-                        <a href="" class="pagination__item-link">4
-                        </a>
-                    </li>
-                    <li class="pagination__item">
-                        <a href="" class="pagination__item-link">5                           
-                        </a>
-                    </li>
-                    <li class="pagination__item">
-                        <a href="" class="pagination__item-link">
-                            <i class="fa fa-chevron-right" aria-hidden="true"></i>
-                        </a>
-                    </li>
-                </ul>
-            </div>   
-            <div class="product">
-                <div class="product__title">
-                    Hàng Trong Nước                  
-                </div>
-                <div class="decoration"></div>
-                <div class="product__wrap">
-                    <div class="item">
-                        <img src="./assets/img/nho.jpg" alt="">
-                        <h4>Nho</h4>
-                        <span class="price">25.000đ</span>
-                        <div class="rate">
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                        </div>
-                        <a href="" class="btn__buy">Mua Ngay</a>
-                    </div>
-                    <div class="item">
-                        <img src="./assets/img/oi_dailoan.jpg" alt="">
-                        <h4>ổi</h4>
-                        <span class="price">25.000đ</span>
-                        <div class="rate">
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                        </div>
-                        <a href="" class="btn__buy">Mua Ngay</a>
-                    </div><div class="item">
-                        <img src="./assets/img/nuoc_gao.jpg" alt="">
-                        <h4>Nước gạo</h4>
-                        <span class="price">25.000đ</span>
-                        <div class="rate">
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                        </div>
-                        <a href="" class="btn__buy">Mua Ngay</a>
-                    </div>
-                    <div class="item">
-                        <img src="./assets/img/nuoc_ep.jpg" alt="">
-                        <h4>Nước ép</h4>
-                        <span class="price">25.000đ</span>
-                        <div class="rate">
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                        </div>
-                        <a href="" class="btn__buy">Mua Ngay</a>
-                    </div>
-                    <div class="item">
-                        <img src="./assets/img/buoi_dx.jpg" alt="">
-                        <h4></h4>
-                        <span class="price">25.000đ</span>
-                        <div class="rate">
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                        </div>
-                        <a href="" class="btn__buy">Mua Ngay</a>
-                    </div>                     
-                </div>
-                <ul class="pagination product__wrap-pagination">
-                    <li class="pagination__item">
-                        <a href="" class="pagination__item-link">
-                            <i class="fa fa-chevron-left" aria-hidden="true"></i>
-                        </a>
-                    </li>
-                    <li class="pagination__item pagination__item--active">
-                        <a href="" class="pagination__item-link ">1
-                        </a>
-                    </li>
-                    <li class="pagination__item">
-                        <a href="" class="pagination__item-link">2
-                        </a>
-                    </li>
-                    <li class="pagination__item">
-                        <a href="" class="pagination__item-link">3
-                        </a>
-                    </li>
-                    <li class="pagination__item">
-                        <a href="" class="pagination__item-link">4
-                        </a>
-                    </li>
-                    <li class="pagination__item">
-                        <a href="" class="pagination__item-link">5                           
-                        </a>
-                    </li>
-                    <li class="pagination__item">
-                        <a href="" class="pagination__item-link">
-                            <i class="fa fa-chevron-right" aria-hidden="true"></i>
-                        </a>
-                    </li>
-                </ul>
-            </div>             
-            <!--Blogs  -->
-            <div class="product">
-                <div class="product__title">
-                    Tin Tức                  
-                </div>
-                <div class="decoration"></div>
-                <div class="product__wrap">
-                    <div class="blog__item">
-                        <img src="./assets/img/blog1.jpg" alt="">
-                        <div class="blog__info">
-                            <div class="blog__timing">
-                                <i class="timing__clock far fa-clock"></i>
-                                01/01/2021 20:16:51
-                            </div>
-                            <h4 class="blog__title">7 loại trái cây giúp tăng cường trí nhớ</h4>
-                            <div class="decrip">Càng có tuổi, nhiều người lo lắng trí nhớ của mình bị suy giảm. Các loại hoa quả dưới đây giàu vitamin C, A, E...</div>                    
-                            <a href="" class="btn__buy">Xem thêm</a>                          
-                        </div>                       
-                    </div>    
-                    <div class="blog__item">
-                        <img src="./assets/img/blog2.jpg" alt="">
-                        <div class="blog__info">
-                            <div class="blog__timing">
-                                <i class="timing__clock far fa-clock"></i>
-                                01/01/2021 20:16:51
-                            </div>
-                            <h4 class="blog__title">7 loại trái cây giúp tăng cường trí nhớ</h4>
-                            <div class="decrip">Càng có tuổi, nhiều người lo lắng trí nhớ của mình bị suy giảm. Các loại hoa quả dưới đây giàu vitamin C, A, E...</div>                    
-                            <a href="" class="btn__buy">Xem thêm</a>                          
-                        </div>
-                    </div> 
-                    <div class="blog__item">
-                        <img src="./assets/img/blog3.jpg" alt="">
-                        <div class="blog__info">
-                            <div class="blog__timing">
-                                <i class="timing__clock far fa-clock"></i>
-                                01/01/2021 20:16:51
-                            </div>
-                            <h4 class="blog__title">7 loại trái cây giúp tăng cường trí nhớ</h4>
-                            <div class="decrip">Càng có tuổi, nhiều người lo lắng trí nhớ của mình bị suy giảm. Các loại hoa quả dưới đây giàu vitamin C, A, E...</div>                    
-                            <a href="" class="btn__buy">Xem thêm</a>                          
-                        </div>
-                    </div> 
-                    <div class="blog__item">
-                        <img src="./assets/img/blog4.jpg" alt="">
-                        <div class="blog__info">
-                            <div class="blog__timing">
-                                <i class="timing__clock far fa-clock"></i>
-                                01/01/2021 20:16:51
-                            </div>
-                            <h4 class="blog__title">7 loại trái cây giúp tăng cường trí nhớ</h4>
-                            <div class="decrip">Càng có tuổi, nhiều người lo lắng trí nhớ của mình bị suy giảm. Các loại hoa quả dưới đây giàu vitamin C, A, E...</div>                    
-                            <a href="" class="btn__buy">Xem thêm</a>                          
-                        </div>
-                    </div>  
-                    <div class="blog__item">
-                        <img src="./assets/img/blog5.jpg" alt="">
-                        <div class="blog__info">
-                            <div class="blog__timing">
-                                <i class="timing__clock far fa-clock"></i>
-                                01/01/2021 20:16:51
-                            </div>
-                            <h4 class="blog__title">7 loại trái cây giúp tăng cường trí nhớ</h4>
-                            <div class="decrip">Càng có tuổi, nhiều người lo lắng trí nhớ của mình bị suy giảm. Các loại hoa quả dưới đây giàu vitamin C, A, E...</div>                    
-                            <a href="" class="btn__buy">Xem thêm</a>                          
-                        </div>
-                    </div>                 
-                </div>               
-            </div> 
-        </div>      
+  </div>
+
+  <!-- ============================================================
+       MAIN INVITATION CONTENT
+  ============================================================ -->
+  <div class="invitation" id="invitation" style="display:none;">
+
+    <!-- MÂY NỔI -->
+    <div class="bg-floats" aria-hidden="true">
+      <span class="bg-xi">囍</span>
+      <span class="bg-xi">囍</span>
+      <span class="bg-xi">囍</span>
     </div>
-    <!-- footer -->
-    <div class="footer">
-        <div class="footer__col">
-            <h3 class="footer__title">Chính sách</h3>
-            <ul class="item__footer">
-                <li class="item__footer-link">
-                    <a href="">Chính sách bảo mật thông tin</a>
-                </li>
-                <li class="item__footer-link">
-                    <a href="">Quy định và hình thức thanh toán</a>
-                </li>
-                <li class="item__footer-link">
-                    <a href="">Chính sách đổi trả</a>
-                </li>
-                <li class="item__footer-link">
-                    <a href="">Câu hỏi thường gặp</a>
-                </li>
-                <li class="item__footer-link">
-                    <a href="">Liên hệ</a>
-                </li>
-            </ul>
-            <div class="footer__icon">
-                <a href="" class="footer__icon-link">
-                    <i class="fb fab fa-facebook"></i>
-                </a>
-                <a href="" class="footer__icon-link">
-                    <i class="gg fab fa-google-plus"></i>
-                </a>
-                <a href="" class="footer__icon-link">
-                    <i class="it fab fa-instagram"></i>
-                </a>
-            </div>
+
+    <!-- 1. THÔNG TIN LỄ CƯỚI -->
+    <section class="section-header reveal">
+      <h2 class="section-title">Thông Tin Lễ Cưới</h2>
+    </section>
+
+    <section class="section-parents reveal">
+      <div class="parents-wrapper">
+        <div class="parent-side">
+          <p class="label-small">Ông Bà</p>
+          <p class="parent-name">Họ Tên Cha Chú Rể</p>
+          <p class="parent-name">Họ Tên Mẹ Chú Rể</p>
+          <p class="parent-address">123 Nguyễn Huệ, Quận 1, TP. Hồ Chí Minh</p>
         </div>
-        <div class="footer__col">
-            <h3 class="footer__title">Hệ thống cửa hàng</h3>
-            <ul class="item__footer">
-                <li class="item__footer-link">
-                    <a href="">Hướng dẫn mua hàng</a>
-                </li>
-                <li class="item__footer-link">
-                    <a href="">Quy định và hình thức thanh toán</a>
-                </li>
-                <li class="item__footer-link">
-                    <a href="">Hóa đơn VAT</a>
-                </li>              
-            </ul>
-            <div class="footer__img">
-                <a href="">
-                    <img src="./assets/img/logo_ft.png" alt="">
-                </a>
-            </div>
+        <div class="parent-divider"></div>
+        <div class="parent-side">
+          <p class="label-small">Ông Bà</p>
+          <p class="parent-name">Họ Tên Cha Cô Dâu</p>
+          <p class="parent-name">Họ Tên Mẹ Cô Dâu</p>
+          <p class="parent-address">456 Lê Lợi, Quận 3, TP. Hồ Chí Minh</p>
         </div>
-        <div class="footer__col">
-            <h3 class="footer__title">CÔNG TY CP XUẤT NHẬP KHẨU FRESH</h3>
-            <ul class="item__footer">
-                <li class="item__footer-link">
-                    <p>Trụ sở: Q.Hà Đông, Hà Nội</p>
-                </li>
-                <li class="item__footer-link">
-                    <p>Hotline: 1900 9999 - 0988 999 999</p>
-                </li>
-                <li class="item__footer-link">
-                    <p>Website: www.hoaquasach.com</p>           
-                </li>              
-            </ul>
+      </div>
+    </section>
+
+    <!-- 2. TÊN CÔ DÂU CHÚ RỂ -->
+    <section class="section-couple reveal">
+      <p class="announce-text">Trân Trọng Báo Tin<br />Lễ Thành Hôn Của Con Chúng Tôi</p>
+      <div class="couple-names">
+        <div class="groom-block reveal-up">
+          <span class="big-name groom">Wuang</span>
+          <span class="name-label">WUANG</span>
         </div>
+        <div class="ampersand-block">
+          <span class="ampersand">&amp;</span>
+        </div>
+        <div class="bride-block reveal-up">
+          <span class="big-name bride">Dunn</span>
+          <span class="name-label">DUNN</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- 3. ALBUM ẢNH CƯỚI -->
+    <section class="section-header reveal">
+      <h2 class="section-title">Album Ảnh Cưới</h2>
+    </section>
+    <section class="section-album reveal">
+      <div class="album-grid" id="albumGrid">
+        <div class="album-item album-placeholder">
+          <div class="album-ph-inner">
+            <span class="ph-icon">📷</span>
+            <span>Ảnh Cưới</span>
+          </div>
+        </div>
+        <div class="album-item album-placeholder">
+          <div class="album-ph-inner">
+            <span class="ph-icon">💑</span>
+            <span>Kỷ Niệm</span>
+          </div>
+        </div>
+        <div class="album-item album-placeholder">
+          <div class="album-ph-inner">
+            <span class="ph-icon">🌸</span>
+            <span>Hạnh Phúc</span>
+          </div>
+        </div>
+        <div class="album-item album-placeholder">
+          <div class="album-ph-inner">
+            <span class="ph-icon">💍</span>
+            <span>Nhẫn Cưới</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 4. THÔNG TIN TIỆC CƯỚI -->
+    <section class="section-header reveal">
+      <h2 class="section-title">Thông Tin Tiệc Cưới</h2>
+    </section>
+    <section class="section-party reveal">
+      <p class="party-sub">Tiệc Cưới Sẽ Diễn Ra Vào Lúc:</p>
+      <p class="party-time-big">18:00</p>
+      <div class="party-date-row">
+        <span class="party-dow">THỨ BẢY</span>
+        <span class="party-sep">|</span>
+        <span class="party-day">18</span>
+        <span class="party-sep">|</span>
+        <span class="party-month">THÁNG 04</span>
+      </div>
+      <p class="party-year">2026</p>
+      <p class="party-lunar">(Tức ngày 02/03 Bính Ngọ)</p>
+      <div class="party-schedule">
+        <div class="sched-item">
+          <span class="sched-label">ĐÓN KHÁCH</span>
+          <span class="sched-time">17:00</span>
+        </div>
+        <div class="sched-item">
+          <span class="sched-label">KHAI TIỆC</span>
+          <span class="sched-time">18:00</span>
+        </div>
+      </div>
+
+      <!-- COUNTDOWN -->
+      <div class="countdown-wrap">
+        <p class="countdown-label">⏳ CÙNG ĐẾM NGƯỢC</p>
+        <div class="countdown" id="countdown">
+          <div class="cd-block">
+            <span class="cd-num" id="cd-days">00</span>
+            <span class="cd-unit">Ngày</span>
+          </div>
+          <div class="cd-block">
+            <span class="cd-num" id="cd-hours">00</span>
+            <span class="cd-unit">Giờ</span>
+          </div>
+          <div class="cd-block">
+            <span class="cd-num" id="cd-mins">00</span>
+            <span class="cd-unit">Phút</span>
+          </div>
+          <div class="cd-block">
+            <span class="cd-num" id="cd-secs">00</span>
+            <span class="cd-unit">Giây</span>
+          </div>
+        </div>
+      </div>
+
+      <button class="btn-calendar" onclick="addToCalendar()">📅 Thêm vào lịch</button>
+      <a href="#guestbook" class="link-confirm">XÁC NHẬN THAM DỰ</a>
+    </section>
+
+    <!-- 5. ĐỊA ĐIỂM -->
+    <section class="section-header reveal">
+      <h2 class="section-title">Tiệc Cưới Sẽ Tổ Chức Tại</h2>
+    </section>
+    <section class="section-venue reveal">
+      <p class="venue-address">📍 Trung Tâm Hội Nghị ABC, 789 Điện Biên Phủ, Quận 3, TP. Hồ Chí Minh</p>
+      <div class="map-container">
+        <iframe
+          title="Địa điểm tiệc cưới"
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3919.4814!2d106.6909!3d10.7769!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31752f38f9ed887b%3A0xc5abeca7f8a62a9!2zNzg5IMSQaeG7h24gQmnDqm4gUGjhu6MsIFF14bqtbiAzLCBUUC4gSOG7kyBDaMOtIE1pbmg!5e0!3m2!1svi!2svn!4v1"
+          width="100%" height="360" style="border:0;" allowfullscreen loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade">
+        </iframe>
+      </div>
+    </section>
+
+    <!-- 6. SỔ LƯU BÚT -->
+    <section class="section-header reveal" id="guestbook">
+      <h2 class="section-title">Sổ Lưu Bút</h2>
+    </section>
+    <section class="section-guestbook reveal">
+      <form class="guestbook-form" id="guestbookForm" onsubmit="submitGuestbook(event)">
+        <input type="text" class="gb-input" id="gbName" placeholder="Nhập tên của bạn*" required />
+        <textarea class="gb-input gb-textarea" id="gbMessage" placeholder="Nhập lời chúc của bạn*" required></textarea>
+        <div class="form-row">
+          <span class="heart-icon">❤️</span>
+          <button type="submit" class="btn-submit">GỬI LỜI CHÚC</button>
+        </div>
+      </form>
+      <div class="guestbook-messages" id="guestbookMessages">
+        <div class="gb-msg">
+          <div class="gb-msg-header">
+            <span class="gb-author">Dunn nè</span>
+            <span class="gb-time">13:40:10 12/3/2026</span>
+          </div>
+          <p class="gb-text">Hehehe</p>
+        </div>
+      </div>
+      <p class="invitation-close">Sự hiện diện của quý khách là niềm vinh hạnh của gia đình chúng tôi!</p>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="wedding-footer">
+      <div class="footer-pattern">
+        <span>囍</span><span>❤</span><span>囍</span>
+      </div>
+      <p>Wuang &amp; Dunn &nbsp;·&nbsp; 18.04.2026</p>
+      <p class="footer-made">Made with ❤ for our special day</p>
+    </footer>
+
+  </div><!-- /invitation -->
+
+  <!-- MUSIC PLAYER -->
+  <button class="music-btn" id="musicBtn" onclick="toggleMusic()" title="Nhạc nền">
+    <span class="music-icon" id="musicIcon">▶</span>
+    <div class="music-rings" id="musicRings">
+      <span></span><span></span><span></span>
     </div>
-    <a href="#" class="scrolltop" id="scroll-top">
-        <i class="fas fa-arrow-up"></i>
-    </a>
-    <script src="./assets/js/main.js" ></script>
+  </button>
+  <audio id="bgMusic" loop>
+    <source src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-8.mp3" type="audio/mpeg" />
+  </audio>
+
+  <script src="./assets/js/script.js"></script>
 </body>
 </html>
