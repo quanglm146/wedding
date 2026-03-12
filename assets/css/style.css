@@ -173,7 +173,7 @@ body {
   max-width: 780px;
   margin: 0 auto;
   background: var(--cream);
-  background-image: url('bg-pattern.png');
+  background-image: url('./assets/img/blog2.jpg');
   background-size: 600px;
   min-height: 100vh;
   position: relative;
