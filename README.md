@@ -1,1 +1,1 @@
-link: https://quanglm146.github.io/Fruits/
+link: https://quanglm146.github.io/wedding/
